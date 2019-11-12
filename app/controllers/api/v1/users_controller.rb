@@ -23,7 +23,6 @@ module Api
         end
       
         def update
-          binding.pry
           if @user.update(user_params)
             render json: @user
           else
