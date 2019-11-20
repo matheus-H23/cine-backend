@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  release_date: 2019-11-13
+  gender_id: one
+  original_language: MyString
+  duration: 1
+
+two:
+  title: MyString
+  release_date: 2019-11-13
+  gender_id: two
+  original_language: MyString
+  duration: 1
