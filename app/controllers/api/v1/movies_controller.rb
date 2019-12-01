@@ -5,18 +5,19 @@ module Api
         before_action :set_movie, only: %i[show update destroy]
 
         def index
-          @movies = Movie.all
-          render json: @movies 
+          @movies_tot = Movie.all.count
+          @movies = Movie.all.page(params[:page]).per(15).includes(:gender)
+          render :index 
         end
       
         def show
-          render json: @movie
+          render :show
         end
       
         def create
           @movie = Movie.new(movie_params)
           if @movie.save
-            render json: @movie
+            render :show
           else
             render json: {status: "error", error: @movie.errors.messages}, status: 401
           end
