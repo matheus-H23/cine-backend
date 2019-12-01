@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+namespace :genders do 
+  gender_list = ["Ação", "Aventura", "Comédia", "Ficção Científica",
+                "Romance", "Suspense", "Terror","Drama", "Fantasia",
+                "Comédia Romantica","Super Herói"]
+
+  gender_list.each do |gender|
+    Gender.create(
+      name: gender
+    )
+  end
+end
