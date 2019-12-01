@@ -48,6 +48,11 @@ group :development do
   # Provides a better error page for Rails and other Rack apps. Includes source code inspection, 
   # a live REPL and local/instance variable inspection for all stack frames.
   gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  # Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc
+  gem 'faker', '~> 2.7'
+  # Kaminari is a Scope & Engine based, clean, powerful, agnostic, customizable and sophisticated paginator for Rails 3+
+  gem 'kaminari', '~> 0.16.3'
+
 end
 
 group :test do
