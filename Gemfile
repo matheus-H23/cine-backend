@@ -51,7 +51,7 @@ group :development do
   # Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc
   gem 'faker', '~> 2.7'
   # Kaminari is a Scope & Engine based, clean, powerful, agnostic, customizable and sophisticated paginator for Rails 3+
-  gem 'kaminari', '~> 0.16.3'
+  gem 'kaminari', '~> 1.2.1'
 
 end
 
